@@ -89,3 +89,7 @@ Note that cell barcodes (`CB`) are only unique **within** a 10x sample, so alway
 ```bash
 pytest -q          # the end-to-end test is skipped if starcode isn't on PATH
 ```
+
+## License
+
+MIT, see [`LICENSE`](LICENSE).
