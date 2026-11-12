@@ -1,0 +1,28 @@
+{
+  "_comment": "Relative paths are resolved against this file's directory. Fields omitted fall back to the defaults in scripts/extract_barcodes_10x.py (DEFAULTS).",
+  "out_dir": "../runs/example",
+  "starcode": "starcode",
+  "threads": 8,
+
+  "upstream_anchor": "AAAGGACGAAACACCG",
+  "downstream_anchor": "GTTTTAGAGCTAGAAA",
+  "bclen": 20,
+  "sc_mm": 4,
+
+  "tag_seqs": {"Tag1": "GCCGAATC"},
+  "exclude_tag_seqs": {"Tag2": "GATAAGCC", "Tag3": "GGGCTTGC", "Tag4": "GTGAGCTA",
+                       "Tag5": "GAATCATA", "Tag6": "GCAAGGCT"},
+  "tag_max_mm": 1,
+  "keep_partial_tag": true,
+
+  "samples": {
+    "PopA_T0_1": "../runs/step1/PopA_T0_1_unmapped.txt",
+    "PopA_T0_2": "../runs/step1/PopA_T0_2_unmapped.txt",
+    "PopA_day28": "../runs/step1/PopA_day28_unmapped.txt",
+    "PopB_T0_1": "../runs/step1/PopB_T0_1_unmapped.txt"
+  },
+  "groups": {
+    "PopA": ["PopA_T0_1", "PopA_T0_2", "PopA_day28"],
+    "PopB": ["PopB_T0_1"]
+  }
+}

@@ -1,0 +1,7 @@
+name: barcode_analysis_10x
+channels: [conda-forge, bioconda]
+dependencies:
+  - python>=3.9
+  - samtools>=1.15
+  - starcode>=1.4
+  - pytest
